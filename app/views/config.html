@@ -1,0 +1,17 @@
+<form>
+  <div class="form-group">
+    <label for="url">Server URL</label>
+    <input type="text" class="form-control" id="url" placeholder="Enter server URL e.g http://www.localhost.com/" ng-model="config.url">
+    <p class="help-block">URL od server</p>
+  </div>
+  <div class="form-group">
+    <label for="endpoint">Endpoint</label>
+    <input type="text" class="form-control" id="endpoint" placeholder="Endpoint e.g " ng-model="config.endpoint">
+  </div>
+  <div class="form-group">
+    <label for="interval">Refresh Interval</label>
+    <input type="text" id="interval" ng-model="config.interval">
+    <p class="help-block">Enter amount of seconds.</p>
+  </div>
+  <button type="submit" class="btn btn-default" ng-click="setConfig()">Submit</button>
+</form>

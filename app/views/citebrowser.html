@@ -1,0 +1,27 @@
+<h4>Quotation</h4>
+
+<h3>{{ quotation }}</h3>
+
+<div class="row">
+
+  <div class="col-md-10">
+
+    <div class="row">
+
+      <div class="col-md-4" ng-repeat="(key, value) in authors">
+
+        <div class="tile">
+          <h1>{{ key }}</h1>
+
+          <p>{{ value.cite }}</p>
+
+          <img ng-src="{{ value.image }}" err-src="images/jencheto.jpg" class="tile-image big-illustration">
+
+          <img class="tile-hot-ribbon" ng-if="value.active" ng-src="images/ribbon.svg">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
